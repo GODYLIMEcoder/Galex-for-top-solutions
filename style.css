@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+body {
+    height: 100vh;
+    display: grid;
+    align-items: center;    
+    background: hsl(30, 38%, 92%);
+    
+}
+
+/*
+font-family: 'Fraunces', serif;  500
+font-family: 'Montserrat', sans-serif; 500,700
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 365px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 5%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s ease-in;
+}
+
+.pic,
+.pic img {
+    width: 100%;
+}
+
+.pic .dsk_bg {
+    position: absolute;
+    opacity: 0;
+}
+
+.info {
+    padding: 23px;
+}
+
+p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+.info .title {
+    font-family: 'Fraunces', serif;
+    margin: 10px 0;
+}
+
+.info .first_p {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info .second_p {
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info span {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.info span h1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+
+.info span p {
+    text-decoration-line: line-through;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+}
+
+button {
+    display: flex;
+    color: #FFF;
+    width: 100%;
+    padding: 12px 0px;
+    border-radius: 5px;
+    justify-content: center;
+    border: 0;    
+    margin-top: 15px;
+    background: hsl(158, 36%, 37%);
+    transition: 0.3S linear;
+}
+
+button:hover {
+    background: hsl(159, 36%, 18%);
+}
+
+button p {
+    color: white;
+}
+
+button img {
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 769px) {
+
+    .container {
+        width: 600PX;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 50% 50%;
+    }
+
+    .pic .dsk_bg {
+        position: static;
+        opacity: 1;
+        height: 100%;
+    }
+
+    .pic .mb_bg{
+        position: absolute;
+        opacity: 0;
+    }
+
+}
